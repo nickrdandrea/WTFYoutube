@@ -4,7 +4,7 @@
     "name": "WTFYoutube",
     "version": "1.0",
   
-    "description": "Remove everything but results from Youtube search.",
+    "description": "Remove unwanted sections of Youtube search.",
   
     "icons": {
       "48": "icons/wtfy-48.png"
@@ -15,7 +15,12 @@
         "matches": ["*://*.youtube.com/*"],
         "js": ["wtfyoutube.js"]
       }
-    ]
-  
+    ],
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "wtfyoutube@nickd.com"
+      }
+    }
   }
   
