@@ -16,6 +16,16 @@
         "js": ["wtfyoutube.js"]
       }
     ],
+    
+    "permissions": [
+      "activeTab"
+    ],
+
+    "browser_action": {
+      "default_icon": "icons/wtfy-48.png",
+      "default_title": "WTFYoutube",
+      "default_popup": "popup/choose_beast.html"
+    },
 
     "browser_specific_settings": {
       "gecko": {
