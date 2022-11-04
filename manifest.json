@@ -1,36 +1,26 @@
 {
+  "manifest_version": 2,
+  "name": "WTFYoutube",
+  "version": "1.0",
 
-    "manifest_version": 2,
-    "name": "WTFYoutube",
-    "version": "1.0",
-  
-    "description": "Remove unwanted sections of Youtube search.",
-  
-    "icons": {
-      "48": "icons/wtfy-48.png"
-    },
-  
-    "content_scripts": [
-      {
-        "matches": ["*://*.youtube.com/*"],
-        "js": ["wtfyoutube.js"]
-      }
-    ],
-    
-    "permissions": [
-      "activeTab"
-    ],
+  "description": "Remove unwanted sections of Youtube search.",
 
-    "browser_action": {
-      "default_icon": "icons/wtfy-48.png",
-      "default_title": "WTFYoutube",
-      "default_popup": "popup/choose_beast.html"
-    },
+  "icons": {
+    "48": "icons/wtfy-48.png"
+  },
 
-    "browser_specific_settings": {
-      "gecko": {
-        "id": "wtfyoutube@nickd.com"
-      }
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["wtfyoutube.js"]
+    }
+  ],
+
+  "permissions": ["activeTab"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wtfyoutube@nickd.com"
     }
   }
-  
+}
